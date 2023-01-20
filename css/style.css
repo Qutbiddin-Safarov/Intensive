@@ -87,6 +87,8 @@
 
       .hero-img_box{
         margin-right: 60px;
+        height: 450px;
+        width: 590px;
       }
       .content-box{
         display: flex;
@@ -159,6 +161,7 @@
                 color: rgba(66, 74, 87, 0.5);
                 background: transparent;
                 border:0;
+                cursor: pointer;
               }
               #f_l1{
                 color: #0096A7;
@@ -195,7 +198,7 @@
                     justify-content: space-between;
                   }
                   .card{
-                    width: 317px;
+                    width: 400px;
                   }
 
                   .card-2{
@@ -245,3 +248,96 @@
       gap: 24px;
     }
   /* FOOTER */
+
+
+  /* MEDIA properyties */
+        @media screen and (max-width:1000px) {
+          .content-box{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          .hero-img_box{
+            display: none;
+          }
+          .tgl{
+            width: 40px;
+            height: 40px;
+          }
+          .cards{
+            justify-content: center;
+            text-align: center;
+          }
+          .list-text_list{
+            display: none;
+          }
+        }
+
+        @media screen and (max-width:620px){
+            .f-list-link{
+              font-size: 20px;
+              line-height: 20px;
+            }
+            .l-1{
+              padding-bottom: 95px;
+            }
+            .l-2{
+              padding-bottom: 50px;
+            }
+            .l-3{
+              padding-bottom: 95px;
+            }
+            .features-container{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+        }
+        @media screen and (max-width:500px){
+          .f-list-link{
+            font-size: 16px;
+          }
+          .footer-container{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+      }
+      @media screen and (max-width:400px){
+        .site-h1{
+          font-size: 40px;
+        }
+        .hero-p{
+          font-size: 20px;
+        }
+        .f-list-link{
+          font-size: 10px;
+        }
+        .footer-container{
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .features-h2{
+          font-size: 30px;
+        }
+        
+        .card{
+          width: 220px;
+        }
+
+        .f-img{
+          width: 220px;
+          height: 180px;
+        }
+        .card_title{
+          font-size: 20px;
+        }
+        .card_info{
+          font-size: 12px;
+          line-height: 15px;
+        }
+    }
+    /* MEDIA properyties */
